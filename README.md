@@ -2,7 +2,7 @@
 
 ## Descrizione
 
-Questo repository contiene i calcoli sviluppati per lo studio del decadimento **B⁺ → K⁺π⁺π⁻ℓ⁻ℓ⁺** nell'ambito della tesi "Amplitude model for five-body b → s ℓ⁻ℓ⁺ decays".
+Questo repository contiene i calcoli sviluppati per lo studio del decadimento **B⁺ → K⁺π⁺π⁻ℓ⁻ℓ⁺** nell'ambito della tesi "Amplitude model for 5-body b → s ℓ⁻ℓ⁺ decays".
 L'obiettivo principale è ottenere la rate differenziale di decadiemnto tramite la costruzione dell'ampiezza totale di decadimento utilizzando il formalismo di elicità.
 La rate differenziale viene decomposta in termini di funzioni angolari ortogonali e i momenti associati.
 
