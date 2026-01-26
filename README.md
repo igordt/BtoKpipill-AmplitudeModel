@@ -47,6 +47,25 @@ I momenti angolari associati a ciascuna funzione di base vengono calcolati e sal
 Contiene i file di testo con i momenti angolari calcolati, organizzati per simmetria (ω = +1 o ω = -1).
 Ogni file contiene la chiave della funzione angolare e l'espressione simbolica del momento associato in forma leggibile.
 
+**Oggetti presenti nelle espressioni dei momenti:**
+
+- **H(η, J, λ, L, R)**, **H̄(η, J, λ, L, R)**, **G(η, J, λ, L, R)** - Ampiezze di elicità adroniche che dipendono da:
+  - **η** - Indice che identifica la chiralità della corrente leptonica
+  - **J** - Spin del sistema adronico
+  - **λ** - Elicità del sistema adronico
+  - **L** - Mometo angolare orbitale tra i prodotti di decadiemnto del B
+  - **R** - Risonanza in cui decade il B
+
+- **R(Res)** - Propagatore della risonanza, dipende solo da:
+  - **Res** - Risonanza considerata 
+
+- **BW(L, rBW, qR)** - Fattore di forma di Blatt-Weisskopf, che dipende da:
+  - **L** - Momento angolare orbitale nel decadimento
+  - **rBW** - Raggio di Blatt-Weisskopf
+  - **qR** - Break-up momentum della particella figlia nel sistema di riferimento della risonanza
+
+- **a_i** - Coefficienti complessi che parametrizzano il contributo relativo di ciascuna ampiezza di decadimento
+
 ## Note
 I calcoli sono computazionalmente intensivi e richiedono tempo di esecuzione significativo.
 Per questo motivo, i risultati intermedi vengono salvati in file `.pkl` che possono essere ricaricati per evitare di ripetere i calcoli.
