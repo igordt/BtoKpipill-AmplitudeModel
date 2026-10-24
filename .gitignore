@@ -1,6 +1,4 @@
-# Ambiente Python
 .venv/
 __pycache__/
 .ipynb_checkpoints/
-# File di Claude Code
 .claude/
