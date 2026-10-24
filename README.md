@@ -2,14 +2,15 @@
 
 ## Description
 
-This repository contains the calculations for the amplitude model of the rare five-body decay **B⁺ → K⁺π⁺π⁻ℓ⁻ℓ⁺**, induced by the b → s ℓ⁻ℓ⁺ transition. They were developed for the Master thesis *"Amplitude model for 5-body b → s ℓ⁻ℓ⁺ decays"* (University of Pisa).
+This repository contains the calculations for the amplitude model of the rare five-body decay **B⁺ → K⁺π⁺π⁻ℓ⁻ℓ⁺**, induced by the FCNC b → s ℓ⁻ℓ⁺ transition. They were developed for the Master thesis *"Amplitude model for 5-body b → s ℓ⁻ℓ⁺ decays"* (University of Pisa).
 
 The decay amplitude is built in the helicity formalism with the isobar approach, for massless leptons. It sums a non-resonant term and 33 resonant channels, which cover three topologies:
 - three-body resonances, R⁺ → K⁺π⁺π⁻;
 - a single two-body resonance, B⁺ → P₁⁺(R⁰ → P₂⁺π⁻)ℓ⁻ℓ⁺;
 - cascades of two resonances, B⁺ → [R₁⁺ → P₁⁺(R₂⁰ → P₂⁺π⁻)]ℓ⁻ℓ⁺.
 
-The squared amplitude is then decomposed onto an **orthogonal basis of real angular functions written with Wigner D-matrices**. Each function is multiplied by a real angular moment that depends only on q², m²(K⁺π⁺π⁻) and m²(P₂⁺π⁻). These moments are the angular observables of the decay and are meant for a method-of-moments analysis.
+The squared amplitude is then decomposed onto an **orthogonal basis of real angular functions** written with Wigner D-matrices.
+Each function is multiplied by a real angular moment that depends only on q², m²(K⁺π⁺π⁻) and m²(P₂⁺π⁻). These moments are the angular observables of the decay and are meant for a method-of-moments analysis.
 
 ## Main results
 
@@ -29,8 +30,17 @@ The full results, with the definition of the basis, the form of the moments and 
 
 Folder: [`WignerAmplitude/`](WignerAmplitude/)
 
-- **[`AmpiezzaWigner.ipynb`](WignerAmplitude/AmpiezzaWigner.ipynb)** builds the decay amplitude for all channels and computes the squared amplitude, summed over the two chiralities of the leptonic current. The angular dependence is kept in Wigner D-matrices. The result is saved in `WIGAtotsq_terms33281.pkl`.
-- **[`MomentiReIm.ipynb`](WignerAmplitude/MomentiReIm.ipynb)** starts from the saved squared amplitude and computes the moments. It writes the non-resonant amplitude with the leptonic structure required by the V−A current, reduces the products of Wigner matrices with the Clebsch–Gordan series, and builds the real orthogonal basis from Re 𝒟 and Im 𝒟. It then extracts the moments, their L ↔ R symmetry ω and the independent subset. Every step is checked numerically, and the last cell prints a detailed summary.
+- **[`AmpiezzaWigner.ipynb`](WignerAmplitude/AmpiezzaWigner.ipynb)** computes the squared amplitude:
+  - builds the decay amplitude for all channels, with the angular dependence kept in Wigner D-matrices;
+  - computes the squared amplitude, summed over the two chiralities of the leptonic current;
+  - saves the result in `WIGAtotsq_terms33281.pkl`.
+- **[`MomentiReIm.ipynb`](WignerAmplitude/MomentiReIm.ipynb)** starts from the saved squared amplitude and computes the moments:
+  - writes the non-resonant amplitude with the leptonic structure required by the V−A current;
+  - reduces the products of Wigner matrices with the Clebsch–Gordan series;
+  - builds the real orthogonal basis from Re 𝒟 and Im 𝒟;
+  - extracts the moments and their L ↔ R symmetry ω;
+  - identifies the linearly independent moments and the relations between the others;
+  - checks every step numerically and prints a detailed summary in the last cell.
 - **`Moments_ReIm/`** holds one readable text file per independent moment, with the angular function and the moment gᴸ, plus `relazioni.txt` with the linear relations between moments.
 - **`.pkl` files** contain saved intermediate and final results: `REIM_moments*.pkl` for the moments and `NR_*.pkl` as caches.
 
@@ -63,7 +73,13 @@ These notebooks validate the method on simpler decays, comparing with known resu
 
 ## Running the notebooks
 
-The notebooks use Python with `sympy`, `dill`, `numpy` and `tqdm`. `AmpiezzaWigner.ipynb` and `Ampiezza.ipynb` also import `winsound`, which is available only on Windows; it only plays a sound when a step finishes.
+The notebooks use Python 3.12. The required packages are listed in [`requirements.txt`](requirements.txt) and can be installed with
+
+```
+pip install -r requirements.txt
+```
+
+The versions of `sympy` and `dill` should match those listed, so that the saved `.pkl` files load correctly.
 
 The calculations are computationally heavy, so intermediate results are saved in `.pkl` files and reloaded when present. To reproduce the main results, run `WignerAmplitude/MomentiReIm.ipynb` from its folder. It reads the saved squared amplitude and takes about 10 minutes.
 
