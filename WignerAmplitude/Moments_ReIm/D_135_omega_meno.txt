@@ -1,0 +1,6 @@
+D_135 = re(WignerD(1, 0, 0, chi, theta2, 0)*WignerD(1, 0, 1, 0, thetal, 0)*WignerD(2, 0, 0, phi, theta1, 0))
+f_eff_135 = re(WignerD(1, 0, 0, chi, theta2, 0)*WignerD(1, 0, 1, 0, thetal, 0)*WignerD(2, 0, 0, phi, theta1, 0)) + 1.0*re(WignerD(1, 0, 1, 0, thetal, 0)*WignerD(1, 1, 0, chi, theta2, 0)*WignerD(2, 0, 1, phi, theta1, 0))
+omega = -1
+
+g^L =
+2*sqrt(30)*q*BW(1, r2, K*(892))*BW(1, r2, K2(1700))*BW(1, rB, B)*re(a30*H(-1, 2, 0, 1, K2(1700))*R(K*(892))*R(K2(1700))*conjugate(a_NR))/(5*pi) + 2*sqrt(30)*q*BW(1, r2, K2(1820))*BW(1, r2, phi(1020))*BW(1, rB, B)*re(a32*H(-1, 2, 0, 1, K2(1820))*R(K2(1820))*R(phi(1020))*conjugate(a_NR))/(5*pi)

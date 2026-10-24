@@ -1,0 +1,6 @@
+D_171 = im(WignerD(1, 1, 1, 0, thetal, 0)*WignerD(2, 1, 0, chi, theta2, 0)*WignerD(2, 1, 1, phi, theta1, 0))
+f_eff_171 = im(WignerD(1, 1, 1, 0, thetal, 0)*WignerD(2, 1, 0, chi, theta2, 0)*WignerD(2, 1, 1, phi, theta1, 0))
+omega = None
+
+g^L =
+sqrt(3)*q*BW(1, rB, B)*BW(2, r2, K2*(1430))*im(a29*H(-1, 2, -1, 1, K2(1700))*R(K2(1700))*R(K2*(1430))*conjugate(a_NR))/pi + sqrt(3)*q*BW(1, rB, B)*BW(2, r2, K2*(1430))*im(a31*H(-1, 2, -1, 1, K2(1820))*R(K2(1820))*R(K2*(1430))*conjugate(a_NR))/pi + sqrt(3)*q*BW(1, rB, B)*BW(2, r3, K2(1820))*im(a4*H(-1, 2, -1, 1, K2(1820))*R(K2(1820))*conjugate(a_NR))/pi + sqrt(3)*q*BW(1, rB, B)*BW(2, r3, K2*(1430))*im(a14*G(-1, 2, -1, 1, K2*(1430))*R(K2*(1430))*conjugate(a_NR))/pi + sqrt(3)*q*BW(1, rB, B)*BW(2, r3, f2(1270))*im(a9*G(-1, 2, -1, 1, f2(1270))*R(f2(1270))*conjugate(a_NR))/pi

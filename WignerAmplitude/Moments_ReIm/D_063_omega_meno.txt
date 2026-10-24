@@ -1,0 +1,6 @@
+D_63 = re(WignerD(0, 0, 0, phi, theta1, 0)*WignerD(1, 0, 0, chi, theta2, 0)*WignerD(1, 0, 1, 0, thetal, 0))
+f_eff_63 = re(WignerD(0, 0, 0, phi, theta1, 0)*WignerD(1, 0, 0, chi, theta2, 0)*WignerD(1, 0, 1, 0, thetal, 0))
+omega = -1
+
+g^L =
+sqrt(6)*q*BW(1, r2, K(1460))*BW(1, r2, K*(892))*BW(1, rB, B)*re(a18*H(-1, 0, 0, 1, K(1460))*R(K(1460))*R(K*(892))*conjugate(a_NR))/pi + sqrt(6)*q*BW(1, r2, K(1460))*BW(1, r2, rho(770))*BW(1, rB, B)*re(a17*H(-1, 0, 0, 1, K(1460))*R(K(1460))*R(rho(770))*conjugate(a_NR))/pi
