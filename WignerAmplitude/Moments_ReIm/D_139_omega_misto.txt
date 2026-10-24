@@ -1,6 +1,0 @@
-D_139 = im(WignerD(1, 0, 0, chi, theta2, 0)*WignerD(1, 1, -1, 0, thetal, 0)*WignerD(2, 1, 0, phi, theta1, 0))
-f_eff_139 = im(WignerD(1, 0, 0, chi, theta2, 0)*WignerD(1, 1, -1, 0, thetal, 0)*WignerD(2, 1, 0, phi, theta1, 0)) + 1.0*im(WignerD(1, 1, -1, 0, thetal, 0)*WignerD(1, 1, 0, chi, theta2, 0)*WignerD(2, 1, 1, phi, theta1, 0))
-omega = None
-
-g^L =
-3*sqrt(30)*q*BW(1, r2, K*(892))*BW(1, r2, K2(1700))*BW(1, rB, B)*im(a30*H(-1, 2, 1, 1, K2(1700))*R(K*(892))*R(K2(1700))*conjugate(a_NR))/(10*pi) + sqrt(6)*q*BW(1, r2, K*(892))*BW(1, rB, B)*BW(2, r2, K2*(1430))*im(a28*Hbar(-1, 2, 1, 1, K2*(1430))*R(K*(892))*R(K2*(1430))*conjugate(a_NR))/(2*pi) + 3*sqrt(30)*q*BW(1, r2, K2(1820))*BW(1, r2, phi(1020))*BW(1, rB, B)*im(a32*H(-1, 2, 1, 1, K2(1820))*R(K2(1820))*R(phi(1020))*conjugate(a_NR))/(10*pi) + sqrt(6)*q*BW(1, r2, omega(782))*BW(1, rB, B)*BW(2, r2, K2*(1430))*im(a27*Hbar(-1, 2, 1, 1, K2*(1430))*R(K2*(1430))*R(omega(782))*conjugate(a_NR))/(2*pi) + sqrt(6)*q*BW(1, r2, phi(1020))*BW(1, rB, B)*BW(2, r2, K2*(1980))*im(a33*Hbar(-1, 2, 1, 1, K2*(1980))*R(K2*(1980))*R(phi(1020))*conjugate(a_NR))/(2*pi) + sqrt(6)*q*BW(1, r2, rho(770))*BW(1, rB, B)*BW(2, r2, K2*(1430))*im(a26*Hbar(-1, 2, 1, 1, K2*(1430))*R(K2*(1430))*R(rho(770))*conjugate(a_NR))/(2*pi)

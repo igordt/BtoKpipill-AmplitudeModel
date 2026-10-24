@@ -1,6 +1,0 @@
-D_94 = im(WignerD(1, 0, 0, chi, theta2, 0)*WignerD(1, 1, 0, phi, theta1, 0)*WignerD(1, 1, 1, 0, thetal, 0))
-f_eff_94 = im(WignerD(1, 0, 0, chi, theta2, 0)*WignerD(1, 1, 0, phi, theta1, 0)*WignerD(1, 1, 1, 0, thetal, 0))
-omega = None
-
-g^L =
--sqrt(3)*q*BW(1, r2, K*(1410))*BW(1, r2, K*(892))*im(a23*Hbar(-1, 1, -1, 0, K*(1410))*R(K*(1410))*R(K*(892))*conjugate(a_NR))/pi - sqrt(3)*q*BW(1, r2, K*(1680))*BW(1, r2, K*(892))*im(a25*Hbar(-1, 1, -1, 0, K*(1680))*R(K*(1680))*R(K*(892))*conjugate(a_NR))/pi - sqrt(3)*q*BW(1, r2, K*(1680))*BW(1, r2, rho(770))*im(a24*Hbar(-1, 1, -1, 0, K*(1680))*R(K*(1680))*R(rho(770))*conjugate(a_NR))/pi
