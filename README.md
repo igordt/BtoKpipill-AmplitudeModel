@@ -1,10 +1,10 @@
 # BtoKpipill-AmplitudeModel
 
-📄 **Thesis (PDF):** [*Amplitude model for 5-body b → s ℓ⁻ℓ⁺ decays*](https://repository.cern/records/mbkez-5er46) (CERN repository)
+📄 **Thesis (PDF):** [*Amplitude model for 5-body b → s ℓ⁻ℓ⁺ decays*](https://doi.org/10.17181/emv68-d0r89) — DOI: [10.17181/emv68-d0r89](https://doi.org/10.17181/emv68-d0r89)
 
 ## Description
 
-This repository contains the calculations for the amplitude model of the rare five-body decay **B⁺ → K⁺π⁺π⁻ℓ⁻ℓ⁺**, induced by the FCNC b → s ℓ⁻ℓ⁺ transition. They were developed for the Master thesis [*"Amplitude model for 5-body b → s ℓ⁻ℓ⁺ decays"*](https://repository.cern/records/mbkez-5er46) (University of Pisa).
+This repository contains the calculations for the amplitude model of the rare five-body decay **B⁺ → K⁺π⁺π⁻ℓ⁻ℓ⁺**, induced by the FCNC b → s ℓ⁻ℓ⁺ transition. They were developed for the Master thesis [*"Amplitude model for 5-body b → s ℓ⁻ℓ⁺ decays"*](https://doi.org/10.17181/emv68-d0r89) (University of Pisa).
 
 The decay amplitude is built in the helicity formalism with the isobar approach, for massless leptons. It sums a non-resonant term and 33 resonant channels, which cover three topologies:
 - three-body resonances, R⁺ → K⁺π⁺π⁻;
